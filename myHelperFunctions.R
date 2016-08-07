@@ -29,6 +29,7 @@ go_JHU_Homework <- function() {
 	# Change the working directory
 	setRootWD()
 	setwd("./JHU_Homework")
+	print(getwd())
 
 	# Source and run the environment script
 	source("JHU_Homework_StartUpScript.R")
@@ -43,10 +44,31 @@ go_Art <- function() {
 	# Change the working directory
 	setRootWD()
 	setwd("./Art-of-R-Programming")
+	print(getwd())
 
 	# Source and run the environment script
 	source("Art-of-R-Programming_StartUpScript.R")
 	Art_of_R_Programming_StartUpScript()
 }
 
+
+#####################################################
+## Helper Function Documentation
+#####################################################
+
+## list_HelperFunctions - Lists the available helper functions. 
 ##
+## Note: This is called from myStartUpScript() on startup. 
+
+list_HelperFunctions <- function() {
+  print("## Core Directory Functions")
+  print("revertwd() - change working directory to the \"Documents\" directory")
+  print("setRootWD() - Hardcoded setting of the Root Working Directory")
+  print(" ")
+  print("## Environment Navigation Functions")
+  print("go_JHU_Homework() - Changes to \"JHU_Homework\" working directory and loads the environment")
+  print("go_Art() - Changes to \"Art-of-R-Programming\" working directory and loads the environment")
+}
+
+
+
