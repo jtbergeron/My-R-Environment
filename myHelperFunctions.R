@@ -36,6 +36,17 @@ go_JHU_Homework <- function() {
 	JHU_Homework_StartUpScript()
 }
 
+## go_JHU_GACD - Changes to "Art-of-R-Programming" working directory (no helper scripts)
+##
+## Note: This is a public "project" workspace that I DO share on GitHub
+
+go_JHU_GACD <- function() {
+	# Change the working directory
+	setRootWD()
+	setwd("./JHU-GACD-ProgrammingAssignment")
+	print(getwd())
+}
+
 ## go_Art - Changes to "Art-of-R-Programming" working directory and loads the environment
 ##
 ## Note: This is a public "project" workspace that I DO share on GitHub
@@ -67,8 +78,7 @@ list_HelperFunctions <- function() {
   print(" ")
   print("## Environment Navigation Functions")
   print("go_JHU_Homework() - Changes to \"JHU_Homework\" working directory and loads the environment")
+  print("go_JHU_GACD() - Changes to \"JHU-GACD-ProgrammingAssignment\" working directory (no helper scripts)")
   print("go_Art() - Changes to \"Art-of-R-Programming\" working directory and loads the environment")
 }
-
-
 

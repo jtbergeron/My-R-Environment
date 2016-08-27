@@ -12,6 +12,7 @@ myStartUpScript <- function() {
 	library(slidify)
 	library(swirl)
 	library(readr)
+	library(plyr)
 	library(dplyr)
 	library(xlsx) ## fails with Java errors when used
 	library(openxlsx) ## using this instead. 
@@ -26,6 +27,7 @@ myStartUpScript <- function() {
 	library(rhdf5)
 	library(httpuv) # Needed for GitHub OUATH access
 	library(sqldf) 
+	library(jpeg) 
 
 	## Load and list my Helper Functions... 
 	print("[StartUp] Loading my Helper Function...")
